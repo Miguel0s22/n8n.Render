@@ -31,6 +31,13 @@ services:
       - key: N8N_ENCRYPTION_KEY
         generateValue: true
 
+      - key: WEBHOOK_URL
+        value: https://n8n-pruebas-pjr9.onrender.com/
+      - key: GENERIC_TIMEZONE
+        value: America/Bogota
+      - key: TZ
+        value: America/Bogota
+
       # These automatically populate connection details 
       # for the Render Postgres database defined below
       - key: DB_TYPE
